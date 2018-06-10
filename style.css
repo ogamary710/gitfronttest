@@ -1,0 +1,390 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/*基本的なフォントサイズと色はここで指定しています*/
+	color: #000000;
+	font-size: 16px;
+}
+a {
+	text-decoration: none;
+}
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+header{
+	width: 100%;
+	height: 70px;
+	background-color: #EC715F;
+}
+.humberger{
+	display: none;
+}
+.headline{
+	width:1024px;
+	height:70px;
+	text-align: center;
+	margin: 0 auto;
+}
+.header-logo{
+	height: 70px;
+	float: left;
+}
+.nav-list{
+	text-align: right;
+}
+.nav-list-item {
+	list-style: none;
+	display: inline-block;
+	margin: 0 30px;
+	padding-top: 20px;
+	color: #FAFAFA;
+	float: right;
+}
+main{
+	padding: 0 auto;
+}
+.main-visual{
+	width: 100%;
+	height: 650px;
+	background-image: url(img/mv.png);
+	background-position: center;
+	background-size: cover;
+}
+.main-visual-content{
+	text-align: center;
+	padding-top: 200px;
+}
+.main-visual-myname{
+	/*text-align: center;*/
+	padding-bottom: 10px;
+	font-size: 64px;
+	color: #FAFAFA;
+}
+.main-visual-text{
+	font-size: 20px;
+	color: #FAFAFA;
+}
+.portfolio{
+	width: 100%;
+	padding: 90px 0;
+	margin: 0 auto;
+	background-color: #ECEFF1;
+}
+.profile{
+	width: 100%;
+	background-color: #ECEFF1;
+	padding: 90px 0;
+}
+.portfolio-contents{
+	width:920px;
+	margin: 0 auto;
+}
+.portfolio-box{
+	float: left;
+	width: 300px;
+	height: 250px;
+	background-size: cover;
+	background-position: center;
+}
+.portfolio-box:nth-child(1){
+	background-image: url(img/sketch.jpg);
+	margin: 0 0 10px 0;
+}
+.portfolio-box:nth-child(2){
+	background-image: url(img/websuku.png);
+	margin: 0 10px 10px 10px;
+}
+.portfolio-box:nth-child(3){
+	background-image: url(img/write.jpg);
+	margin: 0 0 10px 0;
+}
+.portfolio-box:nth-child(4){
+	background-image: url(img/webcamp.png);
+}
+.portfolio-box:nth-child(5){
+	background-image: url(img/talk.jpg);
+	margin: 0 10px 0 10px;
+}
+.portfolio-box:nth-child(6){
+	background-image: url(img/webcamp-mother.png);
+}
+.feature{
+	width: 100%;
+	/*text-align: center;*/
+	padding: 90px 0;
+	margin: 0 auto;
+}
+.feature-contents{
+	width: 980px;
+	margin: 0 auto;
+}
+.feature-box{
+	text-align:center;
+	float: left;
+	width: 320px;
+	padding: 0 5px;
+}
+.fa{
+	font-size: 60px;
+}
+.profile-contents{
+	width: 1024px;
+}
+.profile-box-img{
+	text-align: center;
+	width: 512px;
+	float:left;
+}
+.profile-box{
+	float:left;
+	width: 512px;
+}
+.profile-img{
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	background-size: cover;
+	background-position: center;
+}
+.profile-text{
+	padding-bottom: 8px;
+}
+.contact{
+	width: 100%;
+	padding: 0 auto;
+	padding: 90px 0;
+}
+.contact-contents{
+	width: 800px;
+	margin: 0 auto;
+}
+.contact-box{
+	width: 400px;
+	float: left;
+}
+.mail{
+	padding-bottom: 20px;
+}
+.mail-tell{
+	text-align: center;
+	width: 150px;
+}
+.social{
+	text-align: center;
+	width: 220px;
+	margin: 0 auto;
+}
+.margin{
+	margin-right: 20px;
+}
+footer{
+	width: 100%;
+	height: 60px;
+	background-color: #EC715F;
+}
+footer .footer-text{
+	text-align: center;
+	line-height: 60px;
+	color: #FAFAFA;
+}
+/*****************以降は複数箇所に使用されている*****************/
+.main-titles{
+	text-align: center;
+	/*padding-top: 90px;*/
+	padding-bottom: 8px;
+	font-size: 32px;
+}
+.border-bottom{
+	margin: 0 auto;
+	width: 70px;
+	border-bottom: solid 3px #EC715F;
+}
+.main-text{
+	text-align:center;
+	padding: 30px 0;
+}
+.strength-title{
+	text-align: center;
+	font-size: 20px;
+}
+.subtitles{
+	font-size: 20px;
+	padding-bottom: 5px;
+}
+
+/***********ここからレスポンシブ対応させる為のコード**************/
+@media screen and (max-width:768px) {
+	/*ここからハンバーガーメニューCSS*/
+	header{
+		width:100%;
+		height: 50px;
+	}
+	.headline{
+		width: 100%;
+	}
+	.humberger{
+		width: 44px;
+		height: 44px;
+		color: #FAFAFA;
+		display: block;
+		border: solid 3px;
+		border-radius: 5px;
+		margin-top: 3px;
+		margin-right: 8px;
+		float: right;
+	}
+	header .fa{
+		font-size: 35px;
+		padding-top: 1px;
+		color: #FAFAFA;
+	}
+	.header-logo{
+	height: 50px;
+	float: left;
+	}
+	.nav-list-item{
+		display: none;
+	}
+	.main-visual{
+	width: 100%;
+	height: 650px;
+	background-image: url(img/code.png);
+	background-position: center;
+	background-size: cover;
+	}
+	.main-visual-content{
+		text-align: center;
+		padding-top: 200px;
+	}
+	.main-visual-myname{
+		/*text-align: center;*/
+		padding-bottom: 10px;
+		font-size: 40px;
+		color: #FAFAFA;
+	}
+	.main-visual-text{
+		font-size: 18px;
+		color: #FAFAFA;
+	}
+	.portfolio-contents{
+	width:100%;
+	}
+	.portfolio-box{
+		float: none;
+		/*width: 300px;*/
+		/*height: 250px;*/
+		background-size: cover;
+		background-position: center;
+		margin: 0 auto;
+	}
+	.portfolio-box:nth-child(1){
+		display: none;
+	}
+	.portfolio-box:nth-child(2){
+		background-image: url(img/websuku.png);
+		margin: 0 auto;
+	}
+	.portfolio-box:nth-child(3){
+		display: none;
+	}
+	.portfolio-box:nth-child(4){
+		background-image: url(img/webcamp.png);
+		margin: 10px auto;
+	}
+	.portfolio-box:nth-child(5){
+		display: none;
+	}
+	.portfolio-box:nth-child(6){
+		background-image: url(img/webcamp-mother.png);
+	}
+	.feature{
+	width: 100%;
+	text-align: center;
+	padding: 90px 0;
+	margin: 0 auto;
+	}
+	.feature-contents{
+		width: 100%;
+		margin: 0 auto;
+	}
+	.feature-box{
+		text-align:center;
+		float: none;
+		width: 320px;
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+	.profile{
+	width: 100%;
+	background-color: #ECEFF1;
+	padding: 90px 0;
+	}
+	.profile-contents{
+		width: 100%;
+	}
+	.profile-box-img{
+		/*text-align: center;*/
+		width: 100%;
+		float:none;
+		margin: 0 auto;
+	}
+	.profile-box{
+		float: none;
+		width: 100%;
+		margin: 0 auto;
+	}
+	.profile-img{
+		width: 250px;
+		height: 250px;
+		border-radius: 50%;
+		background-size: cover;
+		background-position: center;
+	}
+	.profile-text{
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.subtitles{
+	font-size: 20px;
+	text-align: center;
+	padding-bottom: 5px;
+	}
+	.skills-info{
+		text-align: center;
+	}
+	.contact{
+	width: 100%;
+	margin: 0 auto;
+	}
+	.contact-contents{
+		width: 100%;
+		margin: 0 auto;
+	}
+	.contact-box{
+		width: 100%;
+		float: none;
+	}
+	.mail{
+		padding-bottom: 20px;
+	}
+	.mail-tell{
+		width: 100%;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+	.social{
+		width: 100%;
+		margin: 0 auto;
+	}
+	.margin{
+		margin-right: 8px;
+	}
+	footer{
+		width: 100%;
+		height: 60px;
+		background-color: #EC715F;
+	}
+}
